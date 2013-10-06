@@ -1,4 +1,10 @@
-<h1>My Pics </h1>
-<% @pics.each do |pic| %>
-<%= pic.inspect %>
-<%end %>
+<div class="my-wrapper">
+	<h1>My Pics </h1>
+	<% @pics.each do |pic| %>
+		<div class="box">
+			<h2>Hour:<%= pic.hour %> </h2>
+			<h3>I feel:<%= pic.emotion %></h3>
+			<p>Learned:<%= pic.Learned %></p>
+		</div>
+	<%end %>
+</div>
