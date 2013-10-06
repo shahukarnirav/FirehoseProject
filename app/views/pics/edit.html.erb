@@ -1,0 +1,12 @@
+	<div class="my-wrapper text-center">
+	<h1 class="custom-font-1"> Upload your Pic</h1>
+	
+	<div class="span6 offset3 stolen-surfbox">
+	<%= simple_form_for @pic do |f| %>
+		<%= f.input :hour %>
+		<%= f.input :emotion, collection: Pic::EMOTIONS, :label => "How did you feel?" %> <br/> 
+		<%= f.input :Learned %>
+		<%= submit_tag "Save my picture", :class => 'btn btn-large btn-primary' %>
+		<% end %>
+	</div>
+	</div>

@@ -5,7 +5,8 @@
 			<h2 class="custom-font-1">Hour:<%= pic.hour %> </h2>
 			<h3 class="custom-font-2">I feel:<%= pic.emotion %></h3>
 			<p class="custom-font-3">Learned:<%= pic.Learned %></p>
-			<!-- < %= link_to("Edit", pic_path, :class => 'btn btn-large btn-primary') %>  -->
+			<%= link_to("Edit", edit_pic_path(pic), :class => 'btn btn-large btn-primary') %> 
+			<%= link_to("Delete", pic_path(pic), :class => 'btn btn-large btn-primary', :method => :delete) %> 
 		</div>
 	<%end %>
 </div>s
