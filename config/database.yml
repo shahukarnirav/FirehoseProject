@@ -45,7 +45,7 @@ test:
   database: testapp_test
   pool: 5
   username: postgres
-  password: password
+  password: passwords
   host: localhost
 
 production:
