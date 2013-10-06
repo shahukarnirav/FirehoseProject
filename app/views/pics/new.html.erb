@@ -6,6 +6,9 @@
 	<%= simple_form_for @pic do |f| %>
 		<%= f.input :hour, :label => "Enter the hour" %> <br/>
 		<!-- < %= f.input :emotion, collection: Stoked, Anxious, Happy, Frustrated:label => "How did you feel?", placeholder: "I'm super STOKED!" %> <br/>  -->
+
+		<%= f.input :image, :as => :file %>
+
 		<%= f.input :emotion, collection: Pic::EMOTIONS, :label => "How did you feel?" %> <br/> 
 		<%= f.input :Learned , :label => "What did you learn" , :input_html => {:rows => 10}, placeholder: "Ruby, Railes, CSS3, HTML5, Responsive design" %>
 		<%= submit_tag "Save my picture", :class => 'btn btn-large btn-primary' %> <br/>

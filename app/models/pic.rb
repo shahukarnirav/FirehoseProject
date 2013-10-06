@@ -1,5 +1,8 @@
 class Pic < ActiveRecord::Base
-  attr_accessible :hour, :emotion, :Learned
+  
+  mount_uploader :image, ImageUploader
+
+  attr_accessible :hour, :emotion, :Learned, :image
 
 	EMOTIONS = [ "Stoked", "Anxious", "Happy", "Frustrated" ]  
 
