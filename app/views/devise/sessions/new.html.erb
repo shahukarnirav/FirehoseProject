@@ -1,0 +1,20 @@
+<div class="my-wrapper text-center">
+ 
+ 
+  <h2 class="custom-font-1">Sign in</h2>
+ 
+	<div class="span6 offset3 stolen-surfbox text-center">
+		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+		  <div class="form-inputs">
+		    <%= f.input :email, :required => false, :autofocus => true %>
+		    <br/>
+		    <%= f.input :password, :required => false %>
+		    <br/>
+		    
+		  </div>
+ 
+		    <%= f.button :submit, "Sign in", :class => "btn btn-large btn-primary" %>
+		<% end %>
+	</div>
+ 
+</div>
